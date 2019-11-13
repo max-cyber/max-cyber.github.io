@@ -85,7 +85,7 @@ button, input, a, textarea {
   }
 }
 section {
-  padding: 10rem 0;
+  padding: 7rem 0;
 }
 .lora() {
   font-family: 'Lora', serif;
@@ -127,11 +127,11 @@ section {
   align-items: flex-end;
 }
 .main {
-  padding: 3rem 0 5rem;
+  padding: 3rem 0 1rem;
   background: #fff url(../img/main-bg.jpg) center top no-repeat;
   background-size: cover;
   &-content {
-    padding: 12rem 0;
+    padding: 8rem 0;
     h1 {
       margin-top: 0;
       margin-bottom: 4rem;
@@ -141,15 +141,11 @@ section {
       text-transform: uppercase;
     }
     }
-    &-sb {
-      margin-bottom: 3rem;
-      font-size: 2.4rem;
-    }
-    &-tagline {/*исправить*/
+    &-tagline {
       .lora();
       display: inline-block;
-      padding: 4rem 3rem;
-      background-color: green;
+      padding: 3rem;
+      background-color: rgba(185, 70, 70, 0.5);
       font-size: 1.8rem;
       border: none;
       border-radius: 0.9rem;
@@ -161,9 +157,10 @@ section {
       }
     }
     &-form {
-      background-color: white;
+      background-color: rgb(255, 255, 255);
       padding: 4rem 5rem;
       text-align: center;
+      border-radius: 5px;
       h2 {
         margin-bottom: 4rem;
         font-size: 1.8rem;
@@ -189,14 +186,14 @@ section {
         }
     }
 }
-.section-header {
-  margin: 2rem 0 10rem;
+.features-header {
+  margin: 2rem 0 5rem;
   .lora();
   font-size: 3rem;
   text-align: center;
 }
 .features {
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
   &-block {
     text-align: center;
     h3 {
@@ -228,12 +225,12 @@ section {
 }
 .prev {
   left: 0;
-  background: url(../img/features/back.svg) center no-repeat;
+  background: url(../img/features/left.svg) center no-repeat;
   background-size: 70%;
   }
 .next {
   right: 0;
-  background: url(../img/features/next.svg) center no-repeat;
+  background: url(../img/features/right.svg) center no-repeat;
   background-size: 70%;
 }
 
@@ -332,7 +329,7 @@ section {
   box-sizing: border-box;
   cursor: grab;
   position: relative;
-  min-height: 35rem;
+  min-height: 25rem;
   overflow-wrap: break-word;
   box-shadow: 0px 0px 6px -2px rgba(26,20,26,0.72);
   span {
@@ -370,9 +367,19 @@ p {
 
     /*---------*/
 @media (max-width: 1025px) {
+  .main-content {
+    padding-bottom: 5rem;
+  }
   .header-agency, .header-name {
     margin-left: 2rem;
   }
+  .features {
+    padding-top: 5rem;
+  }
+    .features-header {
+      margin-bottom: 5rem;
+    }
+
 }
 @media(max-width: 991px) {/*если ширина экрана меньше 991 пк*/
   .main {
@@ -397,6 +404,9 @@ p {
   .header img {
     width: 8rem;
     height: 8rem;
+  }
+  .features-header {
+    margin-bottom: 3rem;
   }
 }
 @media(max-width: 767px) {
@@ -427,5 +437,8 @@ p {
   .header img {
     width: 6rem;
     height: 6rem;
+  }
+  .features-header {
+    margin-bottom: 3rem;
   }
   }
