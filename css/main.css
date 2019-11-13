@@ -131,7 +131,7 @@ section {
   padding: 0.5rem 2rem;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 0;
-  color: #022410;
+  color: #e3b007;
 }
 .header-name {
   font-size: 2.5rem;
@@ -140,7 +140,7 @@ section {
   padding: 0.5rem 2rem;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 0;
-  color: #022410;
+  color: #e3b007;
 }
 .flex {
   /*центрирование*/
@@ -160,7 +160,7 @@ section {
 }
 .main {
   padding: 3rem 0 1rem;
-  background: #ffffff url(../img/main-bg.jpg) center top no-repeat;
+  background: #ffffff url(../img/bg2.jpg) center top no-repeat;
   background-size: cover;
 }
 .main-content {
@@ -171,6 +171,7 @@ section {
   margin-bottom: 4rem;
   line-height: 1.5;
   font-family: 'Lora', serif;
+  color: white;
   font-size: 4rem;
   text-transform: uppercase;
 }
@@ -229,6 +230,8 @@ section {
 }
 .features {
   padding-bottom: 4rem;
+  background-color: white;
+  z-index: 1;
 }
 .features-block {
   text-align: center;
@@ -287,7 +290,8 @@ section {
 }
 .phone-link {
   display: inline-block;
-  color: black;
+  color: white;
+  font-family: 'Lora', serif;
   font-weight: 900;
   font-size: 1.8rem;
   height: 6rem;
@@ -296,6 +300,7 @@ section {
 }
 .phone-link:hover {
   text-decoration: none;
+  color: white;
 }
 /* Всплывающие окна*/
 .box {
@@ -383,9 +388,46 @@ section {
   margin: 2rem 0;
   text-indent: 3%;
 }
+/* callback */
+.callback {
+  padding: 0 0;
+  background: url(../img/callback-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.callback-title {
+  padding: 5rem;
+  font-family: sans-serif;
+  font-size: 3rem;
+  color: white;
+}
+.callback-form {
+  padding: 2rem;
+}
+.callback-form input {
+  width: 100%%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  font-size: 2rem;
+}
+.callback-btn {
+  display: block;
+  margin: 2rem 0;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+.callback-btn p {
+  font-family: 'Lora', serif;
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
 /*Контакты*/
 .contacts {
   padding: 4rem 0;
+  margin-bottom: 15rem;
+  background-color: white;
 }
 .contacts h3 {
   font-family: 'Lora', serif;
@@ -395,6 +437,22 @@ section {
   font-family: 'Lora', serif;
   padding-top: 2rem;
   font-size: 1.5rem;
+}
+.footer {
+  border-top: 1px solid grey;
+  background-color: #63615a;
+  padding: 1rem 0 3rem;
+  position: fixed;
+  width: 100%;
+  height: 15rem;
+  bottom: 0;
+  z-index: -1;
+}
+.footer h2 {
+  padding-bottom: 2rem;
+}
+.social a {
+  margin: 0 1rem;
 }
 /*---------*/
 @media (max-width: 1025px) {
@@ -441,6 +499,12 @@ section {
   .features-header {
     margin-bottom: 3rem;
   }
+  .callback-title {
+    padding-bottom: 0;
+  }
+  .info {
+    text-align: center;
+  }
 }
 @media (max-width: 767px) {
   .header-btn {
@@ -475,5 +539,8 @@ section {
   }
   .features-header {
     margin-bottom: 3rem;
+  }
+  .callback-title {
+    font-size: 2rem;
   }
 }
