@@ -120,6 +120,28 @@ section {
   padding: 2rem 0;
   height: 7rem;
 }
+.header img {
+  width: 10rem;
+  height: 10rem;
+}
+.header-agency {
+  font-size: 2rem;
+  display: block;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0;
+  color: #022410;
+}
+.header-name {
+  font-size: 2.5rem;
+  display: block;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0;
+  color: #022410;
+}
 .flex {
   /*центрирование*/
   display: -webkit-box;
@@ -156,7 +178,8 @@ section {
   margin-bottom: 3rem;
   font-size: 2.4rem;
 }
-.main span {
+.main-tagline {
+  /*исправить*/
   font-family: 'Lora', serif;
   display: inline-block;
   padding: 4rem 3rem;
@@ -168,7 +191,7 @@ section {
   margin-top: 1rem;
   text-align: center;
 }
-.main span strong {
+.main-tagline strong {
   font-size: 3rem;
 }
 .main-form {
@@ -249,6 +272,7 @@ section {
   background-size: 70%;
 }
 .button {
+  position: relative;
   display: inline-block;
   background-color: red;
   color: white;
@@ -274,9 +298,8 @@ section {
   line-height: 6rem;
   text-align: right;
 }
-.name {
-  padding: 10px 20px;
-  font-family: 'Lora', serif;
+.phone-link:hover {
+  text-decoration: none;
 }
 /* Всплывающие окна*/
 .box {
@@ -364,7 +387,26 @@ section {
   margin: 2rem 0;
   text-indent: 3%;
 }
+/*Контакты*/
+.contacts {
+  padding: 4rem 0;
+}
+.contacts h3 {
+  font-family: 'Lora', serif;
+  font-size: 2rem;
+}
+.contacts p {
+  font-family: 'Lora', serif;
+  padding-top: 2rem;
+  font-size: 1.5rem;
+}
 /*---------*/
+@media (max-width: 1025px) {
+  .header-agency,
+  .header-name {
+    margin-left: 2rem;
+  }
+}
 @media (max-width: 991px) {
   /*если ширина экрана меньше 991 пк*/
   .main {
@@ -378,22 +420,49 @@ section {
   .main-content {
     padding-top: 8rem;
   }
+  .phone-link {
+    font-size: 1.6rem;
+  }
+  .box-content {
+    width: 50%;
+  }
+  .header {
+    height: 12rem;
+  }
+  .header img {
+    width: 8rem;
+    height: 8rem;
+  }
 }
 @media (max-width: 767px) {
   .header-btn {
     /*выравниваниекнопки по центру*/
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: auto;
+    display: inline-block;
+    text-align: center;
+  }
+  .box-content {
+    padding: 3rem 1rem;
+    width: 70%;
   }
   .main {
     text-align: center;
   }
   .main-content {
     padding-top: 16rem;
+  }
+  .phone-link {
+    font-size: 1.3rem;
+  }
+  .header {
+    height: 15rem;
+  }
+  .header-btn {
+    position: absolute;
+    -webkit-transform: translate(-50%, 20%);
+            transform: translate(-50%, 20%);
+  }
+  .header img {
+    width: 6rem;
+    height: 6rem;
   }
 }

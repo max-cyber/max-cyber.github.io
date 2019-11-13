@@ -89,10 +89,36 @@ section {
 }
 .lora() {
   font-family: 'Lora', serif;
+  }
+.montserrat() {
+  font-family: 'Montserrat', sans-serif;
 }
+
 .header {
   padding: 2rem 0;
   height: 7rem;
+  img {
+    width: 10rem;
+    height: 10rem;
+    }
+    &-agency {
+      font-size: 2rem;
+      display: block;
+      text-transform: uppercase;
+      padding: 0.5rem 2rem;
+      .montserrat();
+      margin-bottom: 0;
+      color: #022410;
+    }
+    &-name {
+      font-size: 2.5rem;
+      display: block;
+      text-transform: uppercase;
+      padding: 0.5rem 2rem;
+      .montserrat();
+      margin-bottom: 0;
+      color: #022410;
+    }
 }
 .flex {/*центрирование*/
   display: flex;
@@ -119,7 +145,7 @@ section {
       margin-bottom: 3rem;
       font-size: 2.4rem;
     }
-    span {
+    &-tagline {/*исправить*/
       .lora();
       display: inline-block;
       padding: 4rem 3rem;
@@ -212,6 +238,7 @@ section {
 }
 
 .button {
+  position: relative;
   display: inline-block;
   background-color: red;
   color: white;
@@ -234,11 +261,12 @@ section {
   height: 6rem;
   line-height: 6rem;
   text-align: right;
+  &:hover {
+    text-decoration: none;
+  }
 }
-.name {
-  padding: 10px 20px;
-  .lora();
-}
+
+
 
 /* Всплывающие окна*/
 .box {
@@ -260,7 +288,7 @@ section {
     padding: 4rem 6rem;
     background: white;
     text-align: center;
-  }
+    }
   &-form {
     margin-top: 3rem;
     padding: 0;
@@ -323,7 +351,29 @@ section {
     text-indent: 3%;
   }
 }
+
+/*Контакты*/
+.contacts {
+  padding: 4rem 0;
+h3 {
+  .lora();
+  font-size: 2rem;
+}
+p {
+  .lora();
+  padding-top: 2rem;
+  font-size: 1.5rem;
+}
+
+}
+
+
     /*---------*/
+@media (max-width: 1025px) {
+  .header-agency, .header-name {
+    margin-left: 2rem;
+  }
+}
 @media(max-width: 991px) {/*если ширина экрана меньше 991 пк*/
   .main {
     background-position: top left;;  /*фон подгоняем под новый размер*/
@@ -335,12 +385,28 @@ section {
   .main-content {
     padding-top: 8rem;
   }
+  .phone-link {
+    font-size: 1.6rem;
+  }
+  .box-content {
+    width: 50%;
+  }
+  .header {
+    height: 12rem;
+  }
+  .header img {
+    width: 8rem;
+    height: 8rem;
+  }
 }
 @media(max-width: 767px) {
   .header-btn {/*выравниваниекнопки по центру*/
-    display: flex;
-    align-items: center;
-    margin: auto;
+    display:inline-block;
+    text-align: center;
+  }
+  .box-content {
+    padding: 3rem 1rem;
+    width: 70%;
   }
   .main {
     text-align: center;
@@ -348,5 +414,18 @@ section {
   .main-content {
     padding-top: 16rem;
   }
-
+  .phone-link {
+    font-size: 1.3rem;
+  }
+  .header {
+    height: 15rem;
+  }
+  .header-btn {
+    position: absolute;
+    transform: translate(-50%, 20%);
+  }
+  .header img {
+    width: 6rem;
+    height: 6rem;
+  }
   }
