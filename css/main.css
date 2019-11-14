@@ -1,6 +1,4 @@
-html {
-  font-size: 10px;
-}
+/* Анимация*/
 @-webkit-keyframes bounce-left {
   0% {
     -webkit-transform: translateX(-48px);
@@ -107,6 +105,10 @@ html {
     opacity: 1;
   }
 }
+/* Шрифты*/
+html {
+  font-size: 10px;
+}
 button:focus,
 input:focus,
 a:focus,
@@ -116,6 +118,7 @@ textarea:focus {
 section {
   padding: 7rem 0;
 }
+/* Header */
 .header {
   padding: 2rem 0;
   height: 7rem;
@@ -131,7 +134,7 @@ section {
   padding: 0.5rem 2rem;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 0;
-  color: #e3b007;
+  color: white;
 }
 .header-name {
   font-size: 2.5rem;
@@ -140,7 +143,7 @@ section {
   padding: 0.5rem 2rem;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 0;
-  color: #e3b007;
+  color: white;
 }
 .flex {
   /*центрирование*/
@@ -160,7 +163,7 @@ section {
 }
 .main {
   padding: 3rem 0 1rem;
-  background: #ffffff url(../img/bg2.jpg) center top no-repeat;
+  background: #ffffff url(../img/main-bg.jpg) center top no-repeat;
   background-size: cover;
 }
 .main-content {
@@ -222,54 +225,6 @@ section {
   -webkit-animation: bounce-left 1.2s both;
   animation: bounce-left 1.2s both;
 }
-.features-header {
-  margin: 2rem 0 5rem;
-  font-family: 'Lora', serif;
-  font-size: 3rem;
-  text-align: center;
-}
-.features {
-  padding-bottom: 4rem;
-  background-color: white;
-  z-index: 1;
-}
-.features-block {
-  text-align: center;
-}
-.features-block h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-.features-img {
-  height: 8rem;
-}
-.features img {
-  display: block;
-  margin: 0 auto;
-}
-.slick-active {
-  outline: none;
-}
-.arrow {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  position: absolute;
-  z-index: 99;
-  width: 2rem;
-  height: 2rem;
-  border: none;
-}
-.prev {
-  left: 0;
-  background: url(../img/features/left.svg) center no-repeat;
-  background-size: 70%;
-}
-.next {
-  right: 0;
-  background: url(../img/features/right.svg) center no-repeat;
-  background-size: 70%;
-}
 .button {
   position: relative;
   display: inline-block;
@@ -301,6 +256,55 @@ section {
 .phone-link:hover {
   text-decoration: none;
   color: white;
+}
+/* Преимущества */
+.features {
+  padding-bottom: 4rem;
+  background-color: white;
+  z-index: 1;
+}
+.features-header {
+  margin: 2rem 0 5rem;
+  font-family: 'Lora', serif;
+  font-size: 3rem;
+  text-align: center;
+}
+.features-block {
+  text-align: center;
+}
+.features-block h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.features-img {
+  height: 8rem;
+}
+.features-img img {
+  display: block;
+  margin: 0 auto;
+}
+.slick-active {
+  outline: none;
+}
+.arrow {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+}
+.prev {
+  left: 0;
+  background: url(../img/features/left.svg) center no-repeat;
+  background-size: 70%;
+}
+.next {
+  right: 0;
+  background: url(../img/features/right.svg) center no-repeat;
+  background-size: 70%;
 }
 /* Всплывающие окна*/
 .box {
@@ -347,8 +351,7 @@ section {
 .feedback {
   background-size: cover;
   padding-top: 4rem;
-  background: -webkit-gradient(linear, left top, right top, from(#84c7f1), color-stop(18%, rgba(118, 190, 239, 0.97)), color-stop(20%, #75bdef), color-stop(65%, #52a8eb));
-  background: linear-gradient(to right, #84c7f1 0%, rgba(118, 190, 239, 0.97) 18%, #75bdef 20%, #52a8eb 65%);
+  background: white;
 }
 .feedback h2 {
   font-family: 'Lora', serif;
@@ -363,15 +366,18 @@ section {
   font-size: 23px;
   padding: 2rem 3rem;
   text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#84c7f1), color-stop(18%, rgba(118, 190, 239, 0.97)), color-stop(20%, #75bdef), color-stop(65%, #52a8eb));
+  background: linear-gradient(to right, #84c7f1 0%, rgba(118, 190, 239, 0.97) 18%, #75bdef 20%, #52a8eb 65%);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   cursor: -webkit-grab;
   cursor: grab;
   position: relative;
+  border-radius: 1rem;
   min-height: 25rem;
   overflow-wrap: break-word;
-  -webkit-box-shadow: 0px 0px 6px -2px rgba(26, 20, 26, 0.72);
-          box-shadow: 0px 0px 6px -2px rgba(26, 20, 26, 0.72);
+  -webkit-box-shadow: 0px 0px 5px -1px rgba(26, 20, 26, 0.72);
+          box-shadow: 0px 0px 5px -1px rgba(26, 20, 26, 0.72);
 }
 .carousel-item span {
   font-family: 'Lora', serif;
@@ -438,6 +444,7 @@ section {
   padding-top: 2rem;
   font-size: 1.5rem;
 }
+/* Футер */
 .footer {
   border-top: 1px solid grey;
   background-color: #63615a;
@@ -451,10 +458,10 @@ section {
 .footer h2 {
   padding-bottom: 2rem;
 }
-.social a {
+.footer-social a {
   margin: 0 1rem;
 }
-/*---------*/
+/* Медиа */
 @media (max-width: 1025px) {
   .main-content {
     padding-bottom: 5rem;
