@@ -53,12 +53,12 @@
           <div class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-2 col-md-8 offset-md-2">
             <div class="main-form">
               <h2>Заполни форму и получи консультацию быстро</h2>
-              <form action="#">
-                <label for="#">Ваше имя</label>
-                <input class="main-form-input" type="text">
-                <label for="#">Номер телефона</label>
-                <input class="main-form-input" type="text">
-                <button class="main-form-btn button"type="submit">Оставить заявку</button>
+              <form action="telegram.php" method="POST">
+                <label for="">Ваше имя</label>
+                <input class="main-form-input" type="text" id="" name="user_name">
+                <label for="">Номер телефона</label>
+                <input class="main-form-input" type="tel" id="" name="user_phone">
+                <button class="main-form-btn button" type="submit">Оставить заявку</button>
               </form>
             </div>
           </div>
