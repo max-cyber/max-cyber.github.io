@@ -1,5 +1,5 @@
 /* Анимация*/
-@-webkit-keyframes bounce-left {
+@-webkit-keyframes bounce {
   0% {
     -webkit-transform: translateX(-48px);
             transform: translateX(-48px);
@@ -52,7 +52,7 @@
     opacity: 1;
   }
 }
-@keyframes bounce-left {
+@keyframes bounce {
   0% {
     -webkit-transform: translateX(-48px);
             transform: translateX(-48px);
@@ -103,6 +103,54 @@
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
     opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 /* Шрифты*/
@@ -161,6 +209,12 @@ section {
       -ms-flex-align: end;
           align-items: flex-end;
 }
+.main-title {
+  -webkit-animation: fadeInLeft 1s both;
+  animation: fadeInLeft 1s both;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
 .main {
   padding: 3rem 0 1rem;
   background: #ffffff url(../img/main-bg.jpg) center top no-repeat;
@@ -198,6 +252,10 @@ section {
   padding: 4rem 5rem;
   text-align: center;
   border-radius: 5px;
+  -webkit-animation: fadeInRight 1s both;
+  animation: fadeInRight 1s both;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 .main-form h2 {
   margin-bottom: 4rem;
@@ -222,8 +280,10 @@ section {
   background-color: white;
 }
 .main-form-btn {
-  -webkit-animation: bounce-left 1.2s both;
-  animation: bounce-left 1.2s both;
+  -webkit-animation: bounce 1.2s both;
+  animation: bounce 1.2s both;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 .button {
   position: relative;
@@ -366,8 +426,7 @@ section {
   font-size: 23px;
   padding: 2rem 3rem;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(#84c7f1), color-stop(18%, rgba(118, 190, 239, 0.97)), color-stop(20%, #75bdef), color-stop(65%, #52a8eb));
-  background: linear-gradient(to right, #84c7f1 0%, rgba(118, 190, 239, 0.97) 18%, #75bdef 20%, #52a8eb 65%);
+  background: linear-gradient(45deg, #14e19d 0%, rgba(20, 225, 157, 0) 70%), linear-gradient(135deg, #12cdde 10%, rgba(18, 205, 222, 0) 80%), linear-gradient(225deg, #16e9a3 10%, rgba(22, 233, 163, 0) 80%);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   cursor: -webkit-grab;
