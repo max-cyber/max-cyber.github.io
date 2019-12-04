@@ -649,6 +649,13 @@ section {
   .header-social {
     display: inline;
   }
+  .contacts {
+    margin-bottom: 0;
+  }
+  .footer {
+    position: relative;
+    z-index: 1;
+  }
   .header-agency,
   .header-name {
     font-size: 1.2rem;
