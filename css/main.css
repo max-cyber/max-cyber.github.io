@@ -193,10 +193,9 @@ section {
   grid-template-rows: 70% 30%;
 }
 .header {
-  padding: 1rem 0;
-  height: 15vh;
+  padding: 0 1rem;
+  height: auto;
   background-color: rgba(6, 60, 87, 0.5);
-  border-radius: 0 0 20px 20px;
 }
 .header-btn {
   padding: 1rem;
@@ -325,6 +324,7 @@ section {
   padding: 0 0 1rem;
   /*background: #fff url(../img/main-bg.jpg) center top no-repeat;*/
   background-size: cover;
+  height: 100vh;
 }
 .main-content {
   padding: 3rem 0;
@@ -675,7 +675,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 85vh;
+  height: 80vh;
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
   background-color: grey;
@@ -702,7 +702,7 @@ section {
   height: 100%;
 }
 .slider-item a span {
-  font-size: 5vh;
+  font-size: 2.5rem;
   text-shadow: 0px 0px 10px #000;
 }
 .slider-item-1 {
@@ -763,7 +763,6 @@ section {
     font-size: 1.2rem;
   }
   .social {
-    display: inline-block;
     width: auto;
   }
   .social a {
@@ -795,14 +794,13 @@ section {
     padding-top: 1rem;
     grid-template-areas: "btn social";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 45px;
   }
   .slider {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
-    height: 85vh;
+    height: 75vh;
   }
   .slider-item {
     width: 100%;
