@@ -583,12 +583,11 @@ p {
 .footer {
   border-top: 1px solid lighten(grey, 10%);
   background-color: grey;
-  padding: 0 2rem 0 2rem;
+  padding: 2rem;
   display: grid;
-  grid-template-areas: "logo name footer-nav footer-social";
-  grid-template-columns: 6% 1fr 1fr 1fr;
-  grid-column-start: 2;
-  min-height: 150px;
+  grid-template-areas: "logo name footer-nav empty footer-social";
+  grid-template-columns: 6% 25% 45% 6% 1fr;
+  min-height: 100px;
   &-logo {
     grid-area: logo;
     img {
@@ -600,15 +599,29 @@ p {
     grid-area: name;
     span {
       display: block;
-    font-size: 2rem;
+    font-size: 1.6em;
     color: #fff;
     .lora();
     }
   }
   &-nav {
     grid-area: footer-nav;
+
     ul {
       list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li {
+        display: inline-block;
+        float: left;
+        font-size: 1.5rem;
+        padding: 1rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
       a {
         color: #fff;
         text-decoration: none;
@@ -617,16 +630,13 @@ p {
   }
   &-social {
     grid-area: footer-social;
+    display: block;
+
   }
   h2 {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
   }
-&-social {
-  a {
-    margin: 0 1rem;
-  }
-  img {}
-}
+
 }
 * {
   padding: 0;
@@ -754,9 +764,10 @@ p {
     text-align: center;
   }
   .header-grid {
-
     grid-template-areas: "btn social";
-
+  }
+  .footer {
+    grid-template-columns: 10% 25% 45% 1fr;
   }
 }
 @media(max-width: 767px) {
@@ -785,9 +796,6 @@ p {
   .social {
     display: inline-block;
     width: auto;
-    a {
-
-      }
   }
   .box-content {
     padding: 3rem 1rem;
@@ -813,4 +821,18 @@ p {
   .callback-title {
     font-size: 2rem;
   }
+
+  .footer {
+    grid-template-areas: "footer-nav footer-social logo name";
+    grid-template-columns: 20% 25% 10% 1fr;
+    grid-column-gap: 3%;
+    padding: 1rem;
+    &-nav ul {
+        display: block;
+        li {
+          padding: 0 1rem;
+        }
+    }
+
   }
+}
