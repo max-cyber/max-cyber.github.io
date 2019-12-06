@@ -892,3 +892,12 @@ section {
     padding: 0 1rem;
   }
 }
+@media (max-width: 616px) {
+  .footer {
+    grid-template-areas: "footer-nav footer-social logo";
+    grid-template-columns: 1fr 1fr 15%;
+  }
+  .footer-name {
+    display: none;
+  }
+}
