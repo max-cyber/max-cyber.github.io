@@ -710,7 +710,7 @@ section {
   text-shadow: 0px 0px 10px #000;
 }
 .slider-item-1 {
-  background: url(../img/egipt.jpg) center center no-repeat;
+  background: url(../img/egypt.jpg) center no-repeat;
   background-size: cover;
 }
 .slider-item-2 {
@@ -819,6 +819,10 @@ section {
     -webkit-box-flex: 30%;
         -ms-flex-positive: 30%;
             flex-grow: 30%;
+  }
+  .slider-item a {
+    height: auto;
+    width: auto;
   }
   .header-social {
     display: inline;
