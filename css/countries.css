@@ -1,0 +1,76 @@
+main {
+  height: auto !important;
+}
+.country-egypt {
+  height: 80vh;
+  background: #fff url(../img/countries/egypt-1.jpg) center center no-repeat;
+  background-size: cover;
+}
+.country-turkey {
+  height: 80vh;
+  background: #fff url(../img/countries/turkey-1.jpg) center center no-repeat;
+  background-size: cover;
+}
+.country-hungary {
+  height: 80vh;
+  background: #fff url(../img/countries/hungary-1.jpg) center center no-repeat;
+  background-size: cover;
+}
+.country-france {
+  height: 80vh;
+  background: #fff url(../img/countries/france-1.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.countries-grid__1 {
+  display: grid;
+  grid-template-areas:
+  "foto-1 p-1";
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 25%;
+  padding-top: 2rem;
+}
+.countries-grid__2 {
+  display: grid;
+  grid-template-areas:
+  "p-2 foto-2";
+  grid-gap: 2rem;
+  grid-template-columns: 25% 1fr;
+  padding: 2rem 0;
+}
+.countries-img__1 {
+  grid-area: foto-1;
+  height: 40rem;
+  width: 82rem;
+}
+.countries-img__2 {
+  grid-area: foto-2;
+  width: 82rem;
+  height: 40rem;
+}
+.countries-p__1 {
+  grid-area: p-1;
+  text-align: justify;
+  font-size: 1.7rem;
+}
+.countries-p__2 {
+  grid-area: p-2;
+  text-align: justify;
+  font-size: 1.7rem;
+}
+@media (max-width: 991px){
+  .countries-grid__1 {
+    grid-template-areas: "foto-1" "p-1";
+    grid-template-columns: 1fr;
+  }
+  .countries-grid__2 {
+    grid-template-areas: "foto-2" "p-2";
+    grid-template-columns: 1fr;
+  }
+  .countries-img__1 {
+    width: 100%;
+  }
+  .countries-img__2 {
+    width: 100%;
+  }
+}

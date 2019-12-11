@@ -7,13 +7,11 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="slick/slick.css"/>
-  <link rel="stylesheet" href="slick/slick-theme.css"/>
   <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=cyrillic" rel="stylesheet">
-  <title>Прыг Скок Тревел</title>
+  <title>Прыг Скок Travel</title>
 </head>
 <body>
   <main class="main kenburns-top">
@@ -39,7 +37,7 @@
 
           <div class="col-xl-1 col-lg-1 col-md-1 col-sm-3 col-3">
             <div class="logo">
-              <a href="./index.html"><img src="img/earth.svg" alt="Прыг-Скок"></a>
+              <a href="./index.html" title="Главная"><img src="img/earth.svg" alt="Прыг-Скок"></a>
 
             </div>
           </div>
@@ -65,66 +63,50 @@
                 Получить консультацию
               </button>
               <div class="social">
-                <a href="https://www.instagram.com" class="social-icon"><img src="img/inst.svg" alt="Instagram"></a>
-                <a href="https://www.youtube.com" class="social-icon"><img src="img/youtube.svg" alt="Youtube"></a>
-                <a href="https://web.telegram.org" class="social-icon"><img src="img/telegram.svg" alt="Telegram"></a>
-                <a href="tel:+380994568574" class="social-icon"><img src="img/phone.svg" alt="Phonecall"></a>
+                <a href="https://www.instagram.com" class="social-icon" title="Instagram"><img src="img/inst.svg" alt="Instagram"></a>
+                <a href="https://www.youtube.com" class="social-icon" title="Youtube"><img src="img/youtube.svg" alt="Youtube"></a>
+                <a href="https://web.telegram.org" class="social-icon" title="Telegham"><img src="img/telegram.svg" alt="Telegram"></a>
+                <a href="tel:+380994568574" class="social-icon" title="+30994589874"><img src="img/phone.svg" alt="Phonecall"></a>
+                <div class="language">
+                    <a href="#" title="Мова інтерфейсу: Українська"><img src="img/ua.svg" alt=""></a>
+                </div>
               </div>
             </div>
-
-          </div>
-
-
-
-
-        </div>
-
-      </div>
-      <div class="slider">
-        <div class="slider-item slider-item-1"><a href="./tours.html"><span>Египет</span></a></div>
-        <div class="slider-item slider-item-2"><a href="./tours.html"><span>Турция</span></a></div>
-        <div class="slider-item slider-item-3"><a href="./tours.html"><span>Румыния</span></a></div>
-        <div class="slider-item slider-item-4"><a href="./tours.html"><span>Франция</span></a></div>
-      </div>
-    <!--  <div class="main-content">
-        <div class="row">
-          <div class="col-xl-4 col-lg-4 col-md-12">
-            <div class="main-title">
-              <h1>Посмотрим на мир вместе</h1>
-              <a href="./hot-tours.html"><span class="main-tagline">Начни своё путишествие <br>всего от <strong>200</strong>$</span></a>
-            </div>
-          </div>
-
-          <div class="col-xl-8 offset-xl-0 col-lg-8 offset-lg-0 col-md-8 offset-md-2 animate">
-          <section class="search">
-                <script>
-                    var osGeo = ''; /* Страна, курорт или отель по умолчанию в форме поиска */
-                    var osDefaultDeparture = ''; /* ID города или название на языке модуля */
-                    var osDefaultDuration = ''; /* Начальная длительность в днях */
-                    var osTarget = './tours.html'; /* URL для отправки формы */
-                    var osContainer = null; /* Элемент DIV, в котором выводить результаты поиска */
-                    var osTourContainer = null; /* Элемент DIV, в котором выводить подробную информацию о туре */
-                    var osLang = 'ru'; /* Язык интерфейса (ru|ua) */
-                    var osTourTargetBlank = true; /* Открывать страницу тура в новом окне? */
-                    var osOrderUrl = null; /* Вместо формы заказа, переходить на указанный url */
-                    var osCurrency = 'converted'; /* Валюта для вывода туров: converted – гривна, original – в валюте тура $ или € */
-                </script>
-                <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic" rel="stylesheet">
-                <link rel="Stylesheet" href="css/form.css" type="text/css" />
-                <link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/result.css" type="text/css" />
-                <link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/tour.css" type="text/css" />
-                <script src="https://export.otpusk.com/api/session?access_token=2ea8a-36a2a-4459c-78a2f-1db11"></script>
-                <script src="https://export.otpusk.com/js/onsite/"></script>
-                <script src="https://export.otpusk.com/js/order"></script>
-
-            </section>
           </div>
         </div>
-      </div>-->
+      </div>
+      <div class="slider clearfix">
+        <div class="slider-item slider-item-1"><a href="./countries/egypt.html"><span>Египет</span></a></div>
+        <div class="slider-item slider-item-2"><a href="./countries/turkey.html"><span>Турция</span></a></div>
+        <div class="slider-item slider-item-3"><a href="./countries/hungary.html"><span>Румыния</span></a></div>
+        <div class="slider-item slider-item-4"><a href="./countries/france.html"><span>Франция</span></a></div>
+      </div>
     </main>
 
 <!-- Поиск -->
+<section class="search">
+  <script>
+  var osGeo = ''; /* Страна, курорт или отель по умолчанию в форме поиска */
+  var osDefaultDeparture = ''; /* ID города или название на языке модуля */
+  var osDefaultDuration = ''; /* Начальная длительность в днях */
+  var osTarget = ''; /* URL для отправки формы */
+  var osContainer = null; /* Элемент DIV, в котором выводить результаты поиска */
+  var osTourContainer = null; /* Элемент DIV, в котором выводить подробную информацию о туре */
+  var osLang = 'ru'; /* Язык интерфейса (ru|ua) */
+  var osTourTargetBlank = true; /* Открывать страницу тура в новом окне? */
+  var osOrderUrl = null; /* Вместо формы заказа, переходить на указанный url */
+  var osCurrency = 'converted'; /* Валюта для вывода туров: converted – гривна, original – в валюте тура $ или € */
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic" rel="stylesheet">
+  <link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/form.css" type="text/css" />
+  <link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/result.css" type="text/css" />
+  <link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/tour.css" type="text/css" />
+  <script src="https://export.otpusk.com/api/session?access_token=2ea8a-36a2a-4459c-78a2f-1db11"></script>
+  <script src="https://export.otpusk.com/js/onsite/"></script>
+  <script src="https://export.otpusk.com/js/order"></script>
 
+
+  </section>
 <!-- Преимущества  -->
   <section class="features">
     <div class="container">
@@ -133,7 +115,7 @@
         <div class="features-block">
           <div class="features-img">
             <picture>
-              <img src="img/features/watch.svg" alt="Быстро" width="60px" height="60px">
+              <img src="img/features/watch.svg" alt="Быстро">
             </picture>
           </div>
           <h3>Быстро</h3>
@@ -142,7 +124,7 @@
         <div class="features-block">
           <div class="features-img">
             <picture>
-              <img src="img/features/bag.svg" alt="Професионально" width="60px" height="60px">
+              <img src="img/features/bag.svg" alt="Професионально">
             </picture>
           </div>
           <h3>Професионально</h3>
@@ -151,7 +133,7 @@
         <div class="features-block">
           <div class="features-img">
             <picture>
-              <img src="img/features/folder.svg" alt="Выгодно" width="60px" height="60px">
+              <img src="img/features/folder.svg" alt="Выгодно">
             </picture>
           </div>
           <h3>Выгодно</h3>
@@ -160,7 +142,7 @@
         <div class="features-block">
           <div class="features-img">
             <picture>
-              <img src="img/features/list.svg" alt="Легко и просто" width="60px" height="60px">
+              <img src="img/features/list.svg" alt="Легко и просто">
             </picture>
           </div>
           <h3>Легко и просто</h3>
@@ -259,10 +241,10 @@
         <h2>Наши контакты:</h2>
       </div>
       <div class="footer-social-link">
-        <a href="https://www.instagram.com" class="social-icon-inst"><img src="img/inst.svg" alt="Instagram" width="40px" height="40px"></a>
-        <a href="https://www.youtube.com" class="social-icon-youtube"><img src="img/youtube.svg" alt="Youtube" width="40px" height="40px"></a>
-        <a href="https://web.telegram.org" class="social-icon-telegram"><img src="img/telegram.svg" alt="Telegram" width="40px" height="40px"></a>
-        <a href="tel:+380994568574" class="social-icon"><img src="img/phone.svg" alt="Phonecall"></a>
+        <a href="https://www.instagram.com"><img src="img/inst.svg" alt="Instagram"></a>
+        <a href="https://www.youtube.com"><img src="img/youtube.svg" alt="Youtube"></a>
+        <a href="https://web.telegram.org"><img src="img/telegram.svg" alt="Telegram"></a>
+        <a href="tel:+380994568574"><img src="img/phone.svg" alt="Phonecall"></a>
       </div>
     </div>
   </footer>
@@ -275,11 +257,11 @@
         <h4 class="box-header">Интересно?</h4>
         <p>Оставьте свои контактые данные и с Вами свяжутся</p>
         <div class="main-form box-form">
-          <form action="#">
+          <form action="telegram.php" method="POST">
             <label for="#">Ваше имя</label>
-            <input class="main-form-input" type="text">
+            <input class="main-form-input" type="tel" name="user_name">
             <label for="#">Номер телефона</label>
-            <input class="main-form-input" type="text">
+            <input class="main-form-input" type="text" name="user_phone">
             <label for="#">Сообщение</label>
             <textarea class="main-form-input" rows="5"></textarea>
             <button class="button" type="submit">Оставить заявку</button>
