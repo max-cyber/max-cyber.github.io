@@ -275,6 +275,9 @@ section {
 .header a {
   text-decoration: none;
 }
+.header-logo {
+  margin: 0.5rem 0;
+}
 .header-btn {
   padding: 1rem;
   position: relative;
@@ -295,7 +298,7 @@ section {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-.header img {
+.header-img {
   width: 8rem;
   height: 8rem;
 }
@@ -308,12 +311,7 @@ section {
   color: #00CED1;
 }
 .header-name {
-  font-size: 2rem;
-  display: block;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 0;
-  color: #00CED1;
+  height: 7rem;
 }
 .header-nav {
   list-style: none;
@@ -747,10 +745,8 @@ section {
   .main-content {
     padding-bottom: 5rem;
   }
-  .header-agency,
   .header-name {
-    margin-left: 1.4rem;
-    font-size: 1.3rem;
+    height: 5rem;
   }
   .features {
     padding-top: 5rem;
@@ -789,9 +785,8 @@ section {
     position: relative;
     z-index: 1;
   }
-  .header-agency,
   .header-name {
-    font-size: 1.2rem;
+    height: 5rem;
   }
   .social {
     width: auto;
@@ -807,7 +802,7 @@ section {
   .box-content {
     width: 50%;
   }
-  .header img {
+  .header-img {
     width: 6rem;
     height: 6rem;
   }
@@ -875,7 +870,7 @@ section {
   .phone-link {
     font-size: 1.3rem;
   }
-  .header img {
+  .header-img {
     width: 6rem;
     height: 6rem;
   }

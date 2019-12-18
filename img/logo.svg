@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 753.64818 1015.4163"
+   version="1.1"
+   id="svg1602"
+   sodipodi:docname="logo_3.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   width="753.64819"
+   height="1015.4163">
+  <metadata
+     id="metadata1606">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Ресурс 2</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
+     id="namedview1604"
+     showgrid="false"
+     inkscape:snap-page="false"
+     inkscape:zoom="0.26356196"
+     inkscape:cx="49.180918"
+     inkscape:cy="597.00243"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Слой_1-2"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs1552">
+    <style
+       id="style1550">.cls-1{fill:#0f4c81;}.cls-2{fill:none;stroke:#201600;stroke-linecap:round;stroke-linejoin:round;stroke-width:26.14px;}</style>
+  </defs>
+  <title
+     id="title1554">Ресурс 2</title>
+  <g
+     id="Слой_2"
+     data-name="Слой 2"
+     transform="matrix(1,0,0,1.0018792,-16.341084,-0.00200674)">
+    <g
+       id="Слой_1-2"
+       data-name="Слой 1">
+      <path
+         class="cls-2"
+         d="m 603.67,791.77 a 226.24,226.24 0 0 1 -38.42,123.07 c -62,91.7 -201.76,112.17 -295.16,48.42 C 175.3,898.56 151.39,758 247.23,649.1 382.23,509.7 708.23,212 756.92,15.98 517.32,165.55 438.92,291.88 312.57,453.07 234.16,357.23 96.15,228.89 29.41,13.07 192.17,129.14 258.58,195.48 328.91,299.3"
+         id="path1596"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#201600;stroke-width:26.13999939px;stroke-linecap:round;stroke-linejoin:round" />
+      <path
+         class="cls-1"
+         d="m 586.4359,687.81779 a 1.3903953,1.3896048 40.643843 0 1 1.20945,0.69517 3.080876,3.0791242 40.643843 0 1 0.43968,1.74364 l -0.0357,4.84126 a 3.080876,3.0791242 40.643843 0 1 -0.47118,1.74133 1.3903953,1.3896048 40.643843 0 1 -1.21215,0.67101 l -19.58744,7.70025 -8.03271,19.43876 a 1.3903953,1.3896048 40.643843 0 1 -0.69454,1.20895 3.080876,3.0791242 40.643843 0 1 -1.74355,0.43867 l -4.8417,-0.0384 a 3.080876,3.0791242 40.643843 0 1 -1.74174,-0.47212 1.3903953,1.3896048 40.643843 0 1 -0.67175,-1.21243 l 0.14827,-17.22112 -42.62834,-43.20358 -15.56458,56.76822 a 4.9113965,4.9086039 40.643843 0 1 -4.87893,4.79294 l -9.68492,-0.0867 a 4.5813027,4.5786977 40.643843 0 1 -3.47648,-1.4916 4.7813595,4.7786409 40.643843 0 1 -1.33406,-3.41774 l 0.72704,-91.40461 -27.01935,-27.33032 q -3.7555,-3.968 -8.42168,-15.91032 -4.66618,-11.94233 -1.843,-14.77181 2.82014,-2.84925 14.73739,2.02524 11.91725,4.87449 15.66287,8.844 l 27.02694,27.37975 91.39617,0.80116 a 4.9113965,4.9086039 40.643843 0 1 4.7961,4.8812 l -0.0813,9.68404 a 4.9113965,4.9086039 40.643843 0 1 -4.87893,4.79294 l -57.01629,14.63914 42.77276,43.35348 z"
+         id="path1598"
+         inkscape:connector-curvature="0"
+         style="fill:#0f4c81" />
+    </g>
+  </g>
+</svg>

@@ -242,6 +242,9 @@ section {
   a {
     text-decoration: none;
   }
+  &-logo {
+    margin: 0.5rem 0;
+  }
   &-btn {
     padding: 1rem;
     position: relative;
@@ -260,7 +263,7 @@ section {
       transition: all 0.5s;
     }
   }
-  img {
+  &-img {
     width: 8rem;
     height: 8rem;
     }
@@ -273,12 +276,7 @@ section {
       color: #00CED1;
     }
     &-name {
-      font-size: 2rem;
-      display: block;
-      text-transform: uppercase;
-      .montserrat();
-      margin-bottom: 0;
-      color: #00CED1;
+      height: 7rem;
     }
     &-nav {
       list-style: none;
@@ -683,9 +681,8 @@ p {
   .main-content {
     padding-bottom: 5rem;
   }
-  .header-agency, .header-name {
-    margin-left: 1.4rem;
-    font-size: 1.3rem;
+ .header-name {
+    height: 5rem;
     }
   .features {
     padding-top: 5rem;
@@ -725,8 +722,8 @@ p {
   position: relative;
   z-index: 1;
 }
-.header-agency, .header-name {
-  font-size: 1.2rem;
+.header-name {
+  height: 5rem;
 }
 .social {
   width: auto;
@@ -743,7 +740,7 @@ p {
     width: 50%;
   }
 
-  .header img {
+  .header-img {
     width: 6rem;
     height: 6rem;
   }
@@ -808,7 +805,7 @@ p {
     font-size: 1.3rem;
   }
 
-  .header img {
+  .header-img {
     width: 6rem;
     height: 6rem;
   }
