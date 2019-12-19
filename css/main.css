@@ -665,11 +665,11 @@ section {
 .footer {
   border-top: 1px solid #9a9a9a;
   background-color: grey;
-  padding: 2rem;
+  padding: 2rem 2rem 1rem 2rem;
   display: grid;
   grid-template-areas: "logo name footer-nav empty footer-social";
   grid-template-columns: 6% 20% 45% 6% 1fr;
-  min-height: 100px;
+  min-height: 80px;
 }
 .footer-logo {
   grid-area: logo;
@@ -731,6 +731,17 @@ section {
 .footer h2 {
   margin: 0;
   padding-bottom: 1rem;
+}
+.otpusk {
+  background-color: grey;
+  text-align: center;
+}
+.otpusk p {
+  margin: 0;
+}
+.otpusk p a {
+  text-decoration: none;
+  color: black;
 }
 /* Медиа */
 @media (max-width: 1025px) {
@@ -821,10 +832,15 @@ section {
   html {
     font-size: 8.5px;
   }
+  .header-btn {
+    font-size: 1rem;
+  }
   .header-grid {
     padding-top: 1rem;
     grid-template-areas: "btn social";
     grid-template-columns: 40% 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 1rem;
   }
   .slider {
     -webkit-box-orient: vertical;
@@ -875,6 +891,9 @@ section {
   .callback-title {
     font-size: 2rem;
   }
+  .social a img {
+    height: 3.5rem;
+  }
   .footer {
     grid-template-areas: "footer-nav footer-social logo name";
     grid-template-columns: 20% 25% 10% 1fr;
@@ -893,6 +912,14 @@ section {
   }
 }
 @media (max-width: 616px) {
+  .header-btn {
+    font-size: 1rem;
+    padding: 0;
+  }
+  .social-icon img {
+    height: 3.5rem;
+    width: 2.5rem;
+  }
   .footer {
     grid-template-areas: "footer-nav footer-social name";
     grid-template-columns: 25% 1fr 25%;
@@ -901,10 +928,16 @@ section {
     display: none;
   }
   .footer-name img {
-    height: 5rem;
+    height: 4rem;
+    width: 82px;
+    padding-top: 1rem;
   }
   .footer-nav ul {
     padding: 0;
     margin: 0;
+  }
+  .footer-nav ul li {
+    padding: 0;
+    font-size: 1.2rem;
   }
 }

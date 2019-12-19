@@ -327,6 +327,7 @@ section {
     }
   }
 }
+
 .flex {/*центрирование*/
   display: flex;
   justify-content: center;
@@ -612,11 +613,11 @@ p {
 .footer {
   border-top: 1px solid lighten(grey, 10%);
   background-color: grey;
-  padding: 2rem;
+  padding: 2rem 2rem 1rem 2rem;
   display: grid;
   grid-template-areas: "logo name footer-nav empty footer-social";
   grid-template-columns: 6% 20% 45% 6% 1fr;
-  min-height: 100px;
+  min-height: 80px;
   &-logo {
     grid-area: logo;
     img {
@@ -667,6 +668,17 @@ p {
     padding-bottom: 1rem;
   }
 
+}
+.otpusk {
+    background-color: grey;
+    text-align: center;
+    p {
+      margin: 0;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    }
 }
                               /* Медиа */
 @media (max-width: 1025px) {
@@ -756,14 +768,18 @@ p {
   }
 }
 @media(max-width: 767px) {
-
   html {
     font-size: 8.5px;
+    }
+  .header-btn {
+      font-size: 1rem;
     }
   .header-grid {
     padding-top: 1rem;
     grid-template-areas: "btn social";
     grid-template-columns: 40% 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 1rem;
   }
   .slider {
     flex-flow: column;
@@ -799,7 +815,6 @@ p {
   .phone-link {
     font-size: 1.3rem;
   }
-
   .header-img {
     width: 6rem;
     height: 6rem;
@@ -810,7 +825,9 @@ p {
   .callback-title {
     font-size: 2rem;
   }
-
+  .social a img {
+    height: 3.5rem;
+  }
   .footer {
     grid-template-areas: "footer-nav footer-social logo name";
     grid-template-columns: 20% 25% 10% 1fr;
@@ -831,6 +848,14 @@ p {
   }
 }
 @media (max-width: 616px) {
+  .header-btn {
+    font-size: 1rem;
+    padding: 0;
+  }
+  .social-icon img {
+    height: 3.5rem;
+    width: 2.5rem;
+  }
   .footer {
     grid-template-areas: "footer-nav footer-social name";
     grid-template-columns: 25% 1fr 25%;
@@ -838,11 +863,17 @@ p {
       display: none;
     }
     &-name img {
-      height: 5rem;
+      height: 4rem;
+      width: 82px;
+      padding-top: 1rem;
     }
     &-nav ul {
       padding: 0;
       margin: 0;
+      li {
+        padding: 0;
+        font-size: 1.2rem;
+      }
     }
   }
 }
