@@ -251,6 +251,7 @@ section {
     display: inline-block;
     background-color: red;
     color: #fff;
+    font-weight: 700;
     border: none;
     border-radius: 5px;
     text-transform: uppercase;
@@ -519,12 +520,6 @@ section {
   background-size: cover;
   padding-top: 4rem;
   background: white;
-  h2 {
-    .lora();
-    text-align: center;
-    margin: 3rem;
-    padding-bottom: 2rem;
-  }
 }
 .carousel-item {
   display: block;
@@ -592,6 +587,7 @@ section {
   p {
     .lora();
     font-size: 1.6rem;
+    font-weight: 700;
     margin-bottom: 0;
   }
 }
@@ -619,7 +615,7 @@ p {
   padding: 2rem;
   display: grid;
   grid-template-areas: "logo name footer-nav empty footer-social";
-  grid-template-columns: 6% 25% 45% 6% 1fr;
+  grid-template-columns: 6% 20% 45% 6% 1fr;
   min-height: 100px;
   &-logo {
     grid-area: logo;
@@ -630,11 +626,8 @@ p {
   }
   &-name {
     grid-area: name;
-    span {
-      display: block;
-    font-size: 1.6em;
-    color: #fff;
-    .lora();
+    img {
+      height: 7rem;
     }
   }
   &-nav {
@@ -663,12 +656,14 @@ p {
   &-social {
     grid-area: footer-social;
     display: block;
+    text-align: center;
     &-link img {
       width: 40px;
       height: 40px;
     }
   }
   h2 {
+    margin: 0;
     padding-bottom: 1rem;
   }
 
@@ -837,10 +832,17 @@ p {
 }
 @media (max-width: 616px) {
   .footer {
-    grid-template-areas: "footer-nav footer-social logo";
-    grid-template-columns: 35% 1fr 15%;
-    &-name {
+    grid-template-areas: "footer-nav footer-social name";
+    grid-template-columns: 25% 1fr 25%;
+    &-logo {
       display: none;
+    }
+    &-name img {
+      height: 5rem;
+    }
+    &-nav ul {
+      padding: 0;
+      margin: 0;
     }
   }
 }

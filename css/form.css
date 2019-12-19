@@ -33,13 +33,11 @@ body {
 .new_os {
 	text-align: left;
 
-
 }
 .new_os,
 .new_f-container {
 	position: relative;
 	z-index: 3;
-	margin: 0;
 }
 .new_os,
 .new_f-container *,
@@ -57,7 +55,6 @@ body {
 	box-sizing: border-box;
 	font-family: 'Open Sans', sans-serif !important;
 	line-height: normal;
-
 	/*transition: none !important;*/
 }
 .new_f-ext-scale::before,
@@ -96,7 +93,7 @@ body {
 }
 /* контейнер формы */
 .new_f-container {
-	border-radius: 5px;
+	border-radius: 3px;
 	margin: 0 auto 20px;
 	position: relative;
 	z-index: 2;
@@ -205,7 +202,7 @@ body {
 .new_not-found-message .os-order-form-submit_button,
 .new_f-ext-container .new_f-dropdown-btn-apply,
 .new_f-form .new_f-form-submit {
-	background: #f7941d;
+	background: red;
 	border: none;
 	color: #fff;
 	font-weight: 700;
@@ -228,7 +225,7 @@ body {
 .new_not-found-message .os-order-form-submit_button:hover,
 .new_f-form .new_f-form-submit:hover,
 .new_f-container .new_f-dropdown-btn-apply:hover{
-	background: #ec8100;
+	background: #e60000;
 }
 /* Ripple Out Animation on click */
 @-webkit-keyframes hvr-ripple-out {
@@ -1797,6 +1794,9 @@ body {
 }
 
 /*===== стили для вертикально-ориентированной формы =====*/
+.new_mobile-form .new_f-container {
+	max-width: 400px;
+}
 .new_mobile-form .new_f-ext-container .new_f-dropdown-body-bottom,
 .new_mobile-form .new_f-wrapper > .new_f-title,
 .new_mobile-form .new_f-form > .clearfix,

@@ -6,6 +6,7 @@
   <meta name="description" content="Туристическое агенство Прыг Скок Тревел">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="libs/fullpage/jquery.fullPage.css" type="text/css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=cyrillic" rel="stylesheet">
@@ -78,173 +79,165 @@
         <div class="slider-item slider-item-3"><a href="./countries/hungary.html"><span>Румыния</span></a></div>
         <div class="slider-item slider-item-4"><a href="./countries/france.html"><span>Франция</span></a></div>
       </div>
-    </main>
+      </main>
 
-<!-- Поиск -->
-<section class="search">
-  <script>
-  var osGeo = ''; /* Страна, курорт или отель по умолчанию в форме поиска */
-  var osDefaultDeparture = ''; /* ID города или название на языке модуля */
-  var osDefaultDuration = ''; /* Начальная длительность в днях */
-  var osTarget = ''; /* URL для отправки формы */
-  var osContainer = null; /* Элемент DIV, в котором выводить результаты поиска */
-  var osTourContainer = null; /* Элемент DIV, в котором выводить подробную информацию о туре */
-  var osLang = 'ru'; /* Язык интерфейса (ru|ua) */
-  var osTourTargetBlank = true; /* Открывать страницу тура в новом окне? */
-  var osOrderUrl = null; /* Вместо формы заказа, переходить на указанный url */
-  var osCurrency = 'converted'; /* Валюта для вывода туров: converted – гривна, original – в валюте тура $ или € */
-  </script>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic" rel="stylesheet">
-  <link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/form.css" type="text/css" />
-  <link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/result.css" type="text/css" />
-  <link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/tour.css" type="text/css" />
-  <script src="https://export.otpusk.com/api/session?access_token=2ea8a-36a2a-4459c-78a2f-1db11"></script>
-  <script src="https://export.otpusk.com/js/onsite/"></script>
-  <script src="https://export.otpusk.com/js/order"></script>
+  <!-- Поиск -->
+  <section class="search">
+    <script>
+    var osGeo = ''; /* Страна, курорт или отель по умолчанию в форме поиска */
+    var osDefaultDeparture = ''; /* ID города или название на языке модуля */
+    var osDefaultDuration = ''; /* Начальная длительность в днях */
+    var osTarget = ''; /* URL для отправки формы */
+    var osContainer = null; /* Элемент DIV, в котором выводить результаты поиска */
+    var osTourContainer = null; /* Элемент DIV, в котором выводить подробную информацию о туре */
+    var osLang = 'ru'; /* Язык интерфейса (ru|ua) */
+    var osTourTargetBlank = false; /* Открывать страницу тура в новом окне? */
+    var osOrderUrl = null; /* Вместо формы заказа, переходить на указанный url */
+    var osCurrency = 'converted'; /* Валюта для вывода туров: converted – гривна, original – в валюте тура $ или € */
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic" rel="stylesheet">
+    <script src="https://export.otpusk.com/api/session?access_token=2ea8a-36a2a-4459c-78a2f-1db11"></script>
+    <script src="https://export.otpusk.com/js/onsite/"></script>
+    <script src="https://export.otpusk.com/js/order"></script>
 
-
-  </section>
-<!-- Преимущества  -->
+    </section>
+  <!-- Преимущества  -->
   <section class="features">
+      <div class="container">
+        <h2 class="features-header">Почему нужно выбрать именно нас</h2>
+        <div class="features-slider">
+          <div class="features-block">
+            <div class="features-img">
+              <picture>
+                <img src="img/features/watch.svg" alt="Быстро">
+              </picture>
+            </div>
+            <h3>Быстро</h3>
+            <p>Быстрое обслуживание</p>
+          </div>
+          <div class="features-block">
+            <div class="features-img">
+              <picture>
+                <img src="img/features/bag.svg" alt="Професионально">
+              </picture>
+            </div>
+            <h3>Професионально</h3>
+            <p>Качество на высшем уровне</p>
+          </div>
+          <div class="features-block">
+            <div class="features-img">
+              <picture>
+                <img src="img/features/folder.svg" alt="Выгодно">
+              </picture>
+            </div>
+            <h3>Выгодно</h3>
+            <p>Каждому клиенту приятные бонусы</p>
+          </div>
+          <div class="features-block">
+            <div class="features-img">
+              <picture>
+                <img src="img/features/list.svg" alt="Легко и просто">
+              </picture>
+            </div>
+            <h3>Легко и просто</h3>
+            <p>Легко и просто</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Отзывы -->
+  <section id="feedback" class="feedback">
     <div class="container">
-      <h2 class="features-header">Почему нужно выбрать именно нас</h2>
-      <div class="features-slider">
-        <div class="features-block">
-          <div class="features-img">
-            <picture>
-              <img src="img/features/watch.svg" alt="Быстро">
-            </picture>
-          </div>
-          <h3>Быстро</h3>
-          <p>Быстрое обслуживание</p>
+      <h2 class="features-header">Отзывы наших клиентов</h2>
+      <div id="owl-carousel-1" class="owl-carousel">
+        <div class="carousel-item">
+          <img src="img/user.svg" alt="Аватар">
+          <span>Иван</span>
+          <p>Мы вернулись после отдыха на Кипре в городе Лимассол, отель Harmony Bay. Отдохнули отлично! Короче, для нас лучшего и желать нельзя!</p>
         </div>
-        <div class="features-block">
-          <div class="features-img">
-            <picture>
-              <img src="img/features/bag.svg" alt="Професионально">
-            </picture>
-          </div>
-          <h3>Професионально</h3>
-          <p>Качество на высшем уровне</p>
+        <div class="carousel-item">
+          <img src="img/user.svg" alt="Аватар">
+          <span>Людмила</span>
+          <p>Я оформляла у вас тур "Испания-Португалия наследие человечества". Выражаю свою благодарность за вашу работу, заботу и внимание к туристам. Анастасия и Марина, спасибо большое! Вы исполнили все мои пожелания по туру, предложили несколько вариантов перелета, своевременно и спокойно оформили все документы.</p>
         </div>
-        <div class="features-block">
-          <div class="features-img">
-            <picture>
-              <img src="img/features/folder.svg" alt="Выгодно">
-            </picture>
-          </div>
-          <h3>Выгодно</h3>
-          <p>Каждому клиенту приятные бонусы</p>
+        <div class="carousel-item">
+          <img src="img/user.svg" alt="Аватар">
+          <span>Аня П.</span>
+          <p>Спасибо огромное за поездку! Организовано всё очень хорошо. Понравилось безумно! C вашей фирмой, как всегда, приятно иметь дело.</p>
         </div>
-        <div class="features-block">
-          <div class="features-img">
-            <picture>
-              <img src="img/features/list.svg" alt="Легко и просто">
-            </picture>
-          </div>
-          <h3>Легко и просто</h3>
-          <p>Легко и просто</p>
+        <div class="carousel-item">
+          <img src="img/user.svg" alt="Аватар">
+          <span>Артём</span>
+          <p>Добрый день! и вот вернулись с Тайланда. В сам Тайланд я второй раз летала, поэтому сильно не буду описывать его особенности. Правда для подруги он открылся впервые и вот тут я думала, как она его воспримет таким Другим, не Европа. и скажу что он ей очень понравился))) немного грязный, с хаотичным движением, но своей культурой и шармом. поэтому вернулись довольные и счастливые.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Подписка  -->
+  <section class="callback">
+    <div class="container">
+      <div class="callback-content row">
+        <div class="callback-title col-xl-8 col-md-8 align-self-center">
+          <p>Хотите первыми получать самые горящие предложения по e-mail?<br>Подпишитесь на нашу рассылку!</p>
+        </div>
+        <div class="callback-form col-xl-3 col-md-4 align-self-center">
+          <form action="#">
+            <input type="text" class="main-form-input" placeholder="Ваш e-mail" title="">
+            <button class="button callback-btn">
+              <p>Подписаться</p>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Контакты -->
+  <section id="contacts" class="contacts">
+    <div class="container">
+      <div class="row">
+        <div class="info col-xl-3 col-lg-3 col-md-3 align-self-center">
+          <h3>Как нас найти:</h3>
+          <p>г. Одесса, Старосенная пл., 1</p>
+        </div>
+        <div class="map col-xl-8 offset-xl-1 col-lg-8 offset-lg-1 col-md-8 offset-md-1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2748.1934897794436!2d30.73736551510939!3d46.46467527414954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6317e395a713d%3A0x9032c5b2127258a!2z0YPQuy4g0KHRgtCw0YDQvtGB0LXQvdC90LDRjywgMSwg0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1573583876563!5m2!1sru!2sua" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
         </div>
       </div>
     </div>
   </section>
 
-
-
-<!-- Отзывы -->
-<section id="feedback" class="feedback">
-  <div class="container">
-    <h2>Отзывы наших клиентов</h2>
-    <div id="owl-carousel-1" class="owl-carousel">
-
-      <div class="carousel-item">
-        <img src="img/user.svg" alt="Аватар">
-        <span>Иван</span>
-        <p>Мы вернулись после отдыха на Кипре в городе Лимассол, отель Harmony Bay. Отдохнули отлично! Короче, для нас лучшего и желать нельзя!</p>
-      </div>
-      <div class="carousel-item">
-        <img src="img/user.svg" alt="Аватар">
-        <span>Людмила</span>
-        <p>Я оформляла у вас тур "Испания-Португалия наследие человечества". Выражаю свою благодарность за вашу работу, заботу и внимание к туристам. Анастасия и Марина, спасибо большое! Вы исполнили все мои пожелания по туру, предложили несколько вариантов перелета, своевременно и спокойно оформили все документы.</p>
-      </div>
-      <div class="carousel-item">
-        <img src="img/user.svg" alt="Аватар">
-        <span>Аня П.</span>
-        <p>Спасибо огромное за поездку! Организовано всё очень хорошо. Понравилось безумно! C вашей фирмой, как всегда, приятно иметь дело.</p>
-      </div>
-      <div class="carousel-item">
-        <img src="img/user.svg" alt="Аватар">
-        <span>Артём</span>
-        <p>Добрый день! и вот вернулись с Тайланда. В сам Тайланд я второй раз летала, поэтому сильно не буду описывать его особенности. Правда для подруги он открылся впервые и вот тут я думала, как она его воспримет таким Другим, не Европа. и скажу что он ей очень понравился))) немного грязный, с хаотичным движением, но своей культурой и шармом. поэтому вернулись довольные и счастливые.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Подписка  -->
-<section class="callback">
-  <div class="container">
-    <div class="callback-content row">
-      <div class="callback-title col-xl-8 col-md-8 align-self-center">
-        <p>Хотите первыми получать самые горящие предложения по e-mail?<br>Подпишитесь на нашу рассылку!</p>
-      </div>
-      <div class="callback-form col-xl-3 col-md-4 align-self-center">
-        <form action="#">
-          <input type="text" class="main-form-input" placeholder="Ваш e-mail" title="">
-          <button class="button callback-btn">
-            <p>Отправить</p>
-          </button>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Контакты -->
-<section id="contacts" class="contacts">
-  <div class="container">
-    <div class="row">
-      <div class="info col-xl-3 col-lg-3 col-md-3 align-self-center">
-        <h3>Как нас найти:</h3>
-        <p>г. Одесса, Старосенная пл., 1</p>
-      </div>
-      <div class="map col-xl-8 offset-xl-1 col-lg-8 offset-lg-1 col-md-8 offset-md-1">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2748.1934897794436!2d30.73736551510939!3d46.46467527414954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6317e395a713d%3A0x9032c5b2127258a!2z0YPQuy4g0KHRgtCw0YDQvtGB0LXQvdC90LDRjywgMSwg0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1573583876563!5m2!1sru!2sua" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
+  <!-- Footer -->
   <footer class="footer">
-    <div class="footer-logo">
-      <a href="./index.html"><img src="img/earth.svg" alt="Прыг-Скок"></a>
-    </div>
-    <div class="footer-name">
-      <span>Туристическое агентство</span>
-      <span>Прыг-Скок Travel</span>
-    </div>
-    <div class="footer-nav">
-      <ul>
-        <li><a href="./hot-tours.html">Горящие туры</a></li>
-        <li><a href="./tours.html">Туры</a></li>
-        <li><a href="#">Отзывы</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-    </div>
-    <div class="footer-social">
-      <div>
-        <h2>Наши контакты:</h2>
+      <div class="footer-logo">
+        <a href="./index.html"><img src="img/logo.svg" alt="Прыг-Скок"></a>
       </div>
-      <div class="footer-social-link">
-        <a href="https://www.instagram.com"><img src="img/inst.svg" alt="Instagram"></a>
-        <a href="https://www.youtube.com"><img src="img/youtube.svg" alt="Youtube"></a>
-        <a href="https://web.telegram.org"><img src="img/telegram.svg" alt="Telegram"></a>
-        <a href="tel:+380994568574"><img src="img/phone.svg" alt="Phonecall"></a>
+      <div class="footer-name">
+        <a href="./index.html"><img src="img/name.svg" alt="Прыг-Скок"></a>
       </div>
-    </div>
-  </footer>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="./hot-tours.html">Горящие туры</a></li>
+          <li><a href="./tours.html">Туры</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <div>
+          <h2>Наши контакты:</h2>
+        </div>
+        <div class="footer-social-link">
+          <a href="https://www.instagram.com"><img src="img/inst.svg" alt="Instagram"></a>
+          <a href="https://www.youtube.com"><img src="img/youtube.svg" alt="Youtube"></a>
+          <a href="https://web.telegram.org"><img src="img/telegram.svg" alt="Telegram"></a>
+          <a href="tel:+380994568574"><img src="img/phone.svg" alt="Phonecall"></a>
+        </div>
+      </div>
+    </footer>
 
 <!-- Всплывающие окно Получить консультацию-->
   <div class="box">
@@ -269,6 +262,9 @@
   </div>
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="slick/slick.css"/>
+  <link rel="stylesheet" href="css/form.css"/>
+  <link rel="stylesheet" href="css/result.css"/>
+  <link rel="stylesheet" href="css/tour.css"/>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -277,7 +273,6 @@
 
   <script src="slick/slick.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
-
   <script type="text/javascript">
   $(document).ready(function(){
       $('.header-nav').on("click",".anchor", function (event) {
