@@ -88,7 +88,7 @@ body {
 	background: -webkit-linear-gradient(left, rgba(76,156,224,1) 0%,rgba(84,163,230,1) 50%,rgba(101,178,243,1) 100%);
 	background: -o-linear-gradient(left, rgba(76,156,224,1) 0%,rgba(84,163,230,1) 50%,rgba(101,178,243,1) 100%);
 	background: -ms-linear-gradient(left, rgba(76,156,224,1) 0%,rgba(84,163,230,1) 50%,rgba(101,178,243,1) 100%);
-	background: linear-gradient(to right, rgba(76,156,224,1) 0%,rgba(84,163,230,1) 50%,rgba(101,178,243,1) 100%);
+	background: linear-gradient(to right, rgba(76,156,224,0.7) 0%,rgba(84,163,230,0.7) 50%,rgba(101,178,243,0.7) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c9ce0', endColorstr='#65b2f3',GradientType=1 );
 }
 /* контейнер формы */
@@ -110,7 +110,7 @@ body {
 	right: 0;
 	top: 0;
 	bottom: 0;
-	background: url(../../images/onsite/compass-icon.png) no-repeat left -35px top 56px, url(../../images/onsite/plane-icon.png) no-repeat right 15px top 14px;
+	background: url(../img/compassx.svg) no-repeat left -25px top 77px, url(../../images/onsite/plane-icon.png) no-repeat right 15px top 14px;
 }
 .new_f-wrapper {
 	position: relative;
@@ -695,7 +695,7 @@ body {
 	top: 3px;
 }
 [class*='new_f-'] input[type="checkbox"]:checked + *::after {
-	background: url(../../images/onsite/check.svg) no-repeat center;
+	background: url(../img/check.svg) no-repeat center;
 	width: 12px;
 	height: 12px;
 	left: 2px;
@@ -927,7 +927,7 @@ body {
 	height: 18px !important;
 	cursor: pointer;
 	overflow: hidden;
-	background: url(../../images/onsite/arr-left.svg) no-repeat center !important;
+	background: url(../img/features/left.svg) no-repeat center !important;
 	border: none !important;
 	margin: 0 !important;
 	padding: 0 !important;
@@ -1716,7 +1716,7 @@ body {
 	width: auto;
 }
 .new_m-mobile-form:not(.new_mobile-form) .new_f-wrapper-bg-imgs {
-	background: url("../../images/onsite/compass-icon.png") no-repeat scroll left -35px top 178px, rgba(0, 0, 0, 0) url("../../images/onsite/plane-icon.png") no-repeat scroll right 15px top 14px;
+	background: url("../img/compass.svg") no-repeat scroll left -35px top 178px, rgba(0, 0, 0, 0) url("../../images/onsite/plane-icon.png") no-repeat scroll right 15px top 14px;
 }
 .new_m-mobile-form:not(.new_mobile-form) .new_f-form {
 	padding: 0 9px;

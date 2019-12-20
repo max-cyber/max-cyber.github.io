@@ -5,21 +5,25 @@ main {
   height: 80vh;
   background: #fff url(../img/countries/egypt-1.jpg) center center no-repeat;
   background-size: cover;
+  margin: 0 1rem;
 }
 .country-turkey {
   height: 80vh;
   background: #fff url(../img/countries/turkey-1.jpg) center center no-repeat;
   background-size: cover;
+  margin: 0 1rem;
 }
 .country-hungary {
   height: 80vh;
   background: #fff url(../img/countries/hungary-1.jpg) center center no-repeat;
   background-size: cover;
+  margin: 0 1rem;
 }
 .country-france {
   height: 80vh;
   background: #fff url(../img/countries/france-1.jpg) center center no-repeat;
   background-size: cover;
+  margin: 0 1rem;
 }
 
 .countries-grid__1 {

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Туристическое агенство Прыг Скок Тревел">
+  <link rel="stylesheet" href="../../css/bootstrap.css">
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/countries.css">
+  <link rel="stylesheet" href="../../css/form.css"/>
+  <link rel="stylesheet" href="../../css/result.css"/>
+  <link rel="stylesheet" href="../../css/tour.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=cyrillic" rel="stylesheet">
+  <title>Приг Скок Travel</title>
+</head>
+<body>
+  <main class="main kenburns-top">
+      <div class="header">
+        <div class="row no-gutters align-items-center">
+
+          <div class="col-md-1 col-sm-2 col-2 d-lg-none">
+            <nav class="mobile-menu">
+              <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+              <label for="checkbox" class="mobile-menu__btn">
+                <div class="mobile-menu__icon"></div></label>
+              <div class="mobile-menu__container">
+                <ul class="mobile-menu__list">
+                  <li class="mobile-menu__item"><a href="../index.html" class="mobile-menu__link">Головна</a></li>
+                  <li class="mobile-menu__item"><a href="../hot-tours.html" class="mobile-menu__link">Горящие туры</a></li>
+                  <li class="mobile-menu__item"><a href="../tours.html" class="mobile-menu__link">Тури</a></li>
+                  <li class="mobile-menu__item"><a href="../feedback.html" class="mobile-menu__link">Відгуки</a></li>
+                  <li class="mobile-menu__item"><a href="../contacts.html" class="mobile-menu__link">Контакти</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <div class="col-xl-1 col-lg-1 col-md-1 col-sm-3 col-3">
+            <div class="header-logo">
+              <a href="../index.html" title="Главная"><img class="header-img" src="../../img/logo.svg" alt="Приг-Скок"></a>
+
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-7 col-6">
+            <img class="header-name" src="../../img/name.svg" alt="Приг Скок">
+          </div>
+
+          <div class="col-xl-5 col-lg-6 col-md-4 d-none d-lg-block d-xl-block">
+            <ul class="header-nav">
+              <li><a href="../hot-tours.html">Горящие тури</a></li>
+              <li><a href="../tours.html">Тури</a></li>
+              <li><a href="#feedback" class="anchor">Відгуки</a></li>
+              <li><a href="#contacts" class="anchor">Контакти</a></li>
+            </ul>
+          </div>
+
+
+
+          <div class="col-xl-2 offset-xl-1 col-lg-2 offset-lg-0 col-md-5 offset-md-2 col-sm-8 offset-sm-2 col-12 offset-1 clearfix header-social">
+            <div class="header-grid">
+              <button class="header-btn box-btn">
+                Отримати консультацію
+              </button>
+              <div class="social">
+                <a href="https://www.instagram.com" class="social-icon" title="Instagram"><img src="../../img/inst.svg" alt="Instagram"></a>
+                <a href="https://www.youtube.com" class="social-icon" title="Youtube"><img src="../../img/youtube.svg" alt="Youtube"></a>
+                <a href="https://web.telegram.org" class="social-icon" title="Telegham"><img src="../../img/telegram.svg" alt="Telegram"></a>
+                <a href="tel:+380994568574" class="social-icon" title="+30994589874"><img src="../../img/phone.svg" alt="Phonecall"></a>
+                <div class="language">
+                    <a href="../../countries/turkey.html" title="Язык интерфейса: Русский"><img src="../../img/ru.svg" alt="Русский"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="country-turkey"></div>
+      </main>
+
+      <div class="container">
+        <section class="search">
+          <script>
+          var osGeo = 'turkey'; /* Страна, курорт или отель по умолчанию в форме поиска */
+          var osDefaultDeparture = ''; /* ID города или название на языке модуля */
+          var osDefaultDuration = ''; /* Начальная длительность в днях */
+          var osTarget = ''; /* URL для отправки формы */
+          var osContainer = null; /* Элемент DIV, в котором выводить результаты поиска */
+          var osTourContainer = null; /* Элемент DIV, в котором выводить подробную информацию о туре */
+          var osLang = 'ua'; /* Язык интерфейса (ru|ua) */
+          var osTourTargetBlank = false; /* Открывать страницу тура в новом окне? */
+          var osOrderUrl = null; /* Вместо формы заказа, переходить на указанный url */
+          var osCurrency = 'converted'; /* Валюта для вывода туров: converted – гривна, original – в валюте тура $ или € */
+          </script>
+          <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic" rel="stylesheet">
+          <script src="https://export.otpusk.com/api/session?access_token=2ea8a-36a2a-4459c-78a2f-1db11"></script>
+          <script src="https://export.otpusk.com/js/onsite/"></script>
+          <script src="https://export.otpusk.com/js/order"></script>
+        </section>
+        <div class="countries-grid__1">
+          <img class="countries-img__1" src="../../img/countries/turkey-2.jpg" alt="Туреччина">
+          <p class="countries-p__1">Сюрреалистические, парящие в скалах долины <strong>Каппадокии</strong> - мечта каждого фотографа. Гребни скал и гребни холмов являются домом для волнистой панорамы волнообразных скал, образованных тысячелетиями ветра и воды.</p>
+        </div>
+        <div class="countries-grid__2">
+          <img class="countries-img__2" src="../../img/countries/turkey-3.jpg" alt="Туреччина">
+          <p class="countries-p__2">В <strong>Анталии</strong> каждый найдет что-то для себя. Летом два пляжа за пределами города являются раем для солнечных лени и привлекают отдыхающих со всей Европы.</p>
+        </div>
+        <section id="contacts" class="contacts">
+            <div class="row">
+              <div class="info col-xl-3 col-lg-3 col-md-3 align-self-center">
+                <h3>Де нас знайти:</h3>
+                <p>м. Одеса, Старосіна пл., 1</p>
+              </div>
+              <div class="map col-xl-8 offset-xl-1 col-lg-8 offset-lg-1 col-md-8 offset-md-1">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2748.1934897794436!2d30.73736551510939!3d46.46467527414954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6317e395a713d%3A0x9032c5b2127258a!2z0YPQuy4g0KHRgtCw0YDQvtGB0LXQvdC90LDRjywgMSwg0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1573583876563!5m2!1sru!2sua" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              </div>
+            </div>
+        </section>
+      </div>
+
+  <!-- Footer -->
+  <div class="footer">
+      <div class="footer-logo">
+        <a href="./index.html"><img src="../../img/logo.svg" alt="Приг-Скок"></a>
+      </div>
+      <div class="footer-name">
+        <a href="./index.html"><img src="../../img/name.svg" alt="Приг-Скок"></a>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="../../hot-tours.html">Горящие туры</a></li>
+          <li><a href="../../tours.html">Тури</a></li>
+          <li><a href="#">Відгуки</a></li>
+          <li><a href="#">Контакти</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <div>
+          <h2>Наші контакти:</h2>
+        </div>
+        <div class="footer-social-link">
+          <a href="https://www.instagram.com"><img src="../../img/inst.svg" alt="Instagram"></a>
+          <a href="https://www.youtube.com"><img src="../../img/youtube.svg" alt="Youtube"></a>
+          <a href="https://web.telegram.org"><img src="../../img/telegram.svg" alt="Telegram"></a>
+          <a href="tel:+380994568574"><img src="../../img/phone.svg" alt="Phonecall"></a>
+        </div>
+      </div>
+    </div>
+    <div class="otpusk">
+      <p>Актуальність турів підтримує <a href="https://www.otpusk.com/">Отпуск.ком</a></p>
+    </div>
+
+<!-- Всплывающие окно Получить консультацию-->
+  <div class="box">
+    <div class="box-dialog">
+      <div class="box-content">
+        <button class="box-close">&times;</button>
+        <h3 class="box-header">Цікаво?</h3>
+        <p>Залиште свої контактні данні і з Вами зв'яжуться</p>
+        <div class="main-form box-form">
+          <form action="../telegram.php" method="POST">
+            <label for="#">Ваше ім'я</label>
+            <input class="main-form-input" type="tel" name="user_name">
+            <label for="#">Номер телефону</label>
+            <input class="main-form-input" type="text" name="user_phone">
+            <label for="#">Повідомлення</label>
+            <textarea class="main-form-input" rows="5"></textarea>
+            <button class="button" type="submit">Залишити заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+      $('.header-nav').on("click",".anchor", function (event) {
+          event.preventDefault();
+          var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+          $('body,html').animate({scrollTop: top}, 1000);
+      });
+  });
+  </script>
+  <script>
+      $(document).ready(function(){
+        <!--Модальное окно-->
+        $('.box-btn').on('click', function(event) {
+          event.preventDefault();
+          $('.box').fadeIn();
+        });
+        $('.box-close').on('click', function(event) {
+          event.preventDefault();
+          $('.box').fadeOut();
+        });
+      });
+    </script>
+</body>
+</html>
