@@ -1,0 +1,16 @@
+.slider-item-1 {
+  background: url(../img/egypt-xmas.jpg) center no-repeat !important;
+}
+.slider-item-2 {
+  background: url(../img/turkey-xmas.jpg) center no-repeat !important;
+}
+.slider-item-3 {
+  background: url(../img/hungary-xmas.jpg) center no-repeat !important;
+}
+.slider-item-4 {
+  background: url(../img/france-xmas.jpg) center no-repeat !important;
+}
+.new_f-wrapper-bg-imgs {
+  background: url(../img/snowflake.svg) no-repeat left 25px top 83%, url(../img/snowflake-2.svg) no-repeat right 15px top 2%, url(../img/snowflake.svg) no-repeat left 39% top 4% !important;
+  background-size: 48px !important;
+}
