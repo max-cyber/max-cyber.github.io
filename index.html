@@ -27,7 +27,7 @@
                   <li class="mobile-menu__item"><a href="./hot-tours.html" class="mobile-menu__link">Горящие туры</a></li>
                   <li class="mobile-menu__item"><a href="./tours.html" class="mobile-menu__link">Туры</a></li>
                   <li class="mobile-menu__item"><a href="./info.html" class="mobile-menu__link">Информация</a></li>
-                  <li class="mobile-menu__item"><a href="./contacts.html" class="mobile-menu__link">О нас</a></li>
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">О нас</a></li>
                 </ul>
               </div>
             </nav>
@@ -48,7 +48,7 @@
               <li><a href="./hot-tours.html">Горящие туры</a></li>
               <li><a href="./tours.html">Туры</a></li>
               <li><a href="./info.html">Информация</a></li>
-              <li><a href="#contacts">О нас</a></li>
+              <li><a href="#contacts" class="anchor">О нас</a></li>
             </ul>
           </div>
 
@@ -319,6 +319,16 @@
 
   <script src="slick/slick.min.js"></script>
   <script src="js/xmas.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+      $('.header-nav').on("click",".anchor", function (event) {
+          event.preventDefault();
+          var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+          $('body,html').animate({scrollTop: top}, 1000);
+      });
+  });
+  </script>
   <script type="text/javascript">
   $(document).ready(function(){
       $('.header-nav').on("click",".anchor", function (event) {
