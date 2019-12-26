@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap&subset=cyrillic" rel="stylesheet">
-  <title>Туры</title>
+  <title>Прыг Скок Travel</title>
 </head>
 <body>
   <main class="main kenburns-top">
@@ -71,48 +71,22 @@
         </div>
       </div>
     </div>
-    <div class="container">
-
-      <div class="col-xl-12 col-lg-12 col-md-12 animate">
-        <section class="search">
-          <script>
-          var osGeo = ''; /* Страна, курорт или отель по умолчанию в форме поиска */
-          var osDefaultDeparture = ''; /* ID города или название на языке модуля */
-          var osDefaultDuration = ''; /* Начальная длительность в днях */
-          var osTarget = ''; /* URL для отправки формы */
-          var osContainer = null; /* Элемент DIV, в котором выводить результаты поиска */
-          var osTourContainer = null; /* Элемент DIV, в котором выводить подробную информацию о туре */
-          var osLang = 'ru'; /* Язык интерфейса (ru|ua) */
-          var osTourTargetBlank = true; /* Открывать страницу тура в новом окне? */
-          var osOrderUrl = null; /* Вместо формы заказа, переходить на указанный url */
-          var osCurrency = 'converted'; /* Валюта для вывода туров: converted – гривна, original – в валюте тура $ или € */
-          </script>
-          <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic" rel="stylesheet">
-          <link rel="stylesheet" href="css/form.css"/>
-          <link rel="stylesheet" href="css/result.css"/>
-          <link rel="stylesheet" href="css/tour.css"/>
-          <script src="https://export.otpusk.com/api/session?access_token=2ea8a-36a2a-4459c-78a2f-1db11"></script>
-          <script src="https://export.otpusk.com/js/onsite/"></script>
-          <script src="https://export.otpusk.com/js/order"></script>
-          </section>
-    </div>
   </main>
-
-  <section id="contacts" class="contacts">
-    <div class="container">
-      <div class="row">
-        <div class="info col-xl-3 col-lg-3 col-md-3 align-self-center">
-          <h3>Как нас найти:</h3>
-          <p>г. Одесса, Старосенная пл., 1</p>
-        </div>
-        <div class="map col-xl-8 offset-xl-1 col-lg-8 offset-lg-1 col-md-8 offset-md-1">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2748.1934897794436!2d30.73736551510939!3d46.46467527414954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6317e395a713d%3A0x9032c5b2127258a!2z0YPQuy4g0KHRgtCw0YDQvtGB0LXQvdC90LDRjywgMSwg0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1573583876563!5m2!1sru!2sua" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-
-        </div>
+  <div class="container">
+    <h2>Полезная информация</h2>
+    <div class="row">
+      <div class="col-md-4 navigation">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
       </div>
+      <div class="col-md-8">COntent</div>
     </div>
-  </section>
-
+  </div>
   <!-- Footer -->
   <footer>
     <div class="operators">
@@ -145,45 +119,8 @@
           </div>
         </div>
       </div>
-      <div class="otpusk">
-        <p>Актуальность туров поддерживает <a href="https://www.otpusk.com/">Отпуск.ком</a></p>
-      </div>
   </footer>
-    <!-- Всплывающие окно Получить консультацию-->
-      <div class="box">
-        <div class="box-dialog">
-          <div class="box-content">
-            <button class="box-close">&times;</button>
-            <h4 class="box-header">Интересно?</h4>
-            <p>Оставьте свои контактые данные и с Вами свяжутся</p>
-            <div class="main-form box-form">
-              <form action="telegram.php" method="POST">
-                <label for="#">Ваше имя</label>
-                <input class="main-form-input" type="tel" name="user_name">
-                <label for="#">Номер телефона</label>
-                <input class="main-form-input" type="text" name="user_phone">
-                <label for="#">Сообщение</label>
-                <textarea class="main-form-input" rows="5"></textarea>
-                <button class="button" type="submit">Оставить заявку</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="js/xmas.js"></script>
-    <script>
-        $(document).ready(function(){
-          <!--Модальное окно-->
-          $('.box-btn').on('click', function(event) {
-            event.preventDefault();
-            $('.box').fadeIn();
-          });
-          $('.box-close').on('click', function(event) {
-            event.preventDefault();
-            $('.box').fadeOut();
-          });
-        });
-    </script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="js/xmas.js"></script>
 </body>
 </html>

@@ -1,52 +1,3 @@
-/* Анимация*/
-@-webkit-keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-@-webkit-keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
 html {
   font-size: 10px;
 }
@@ -191,6 +142,23 @@ section {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+/* Xmas*/
+/*.slider-item-1 {
+  background: url(../img/egypt-xmas.jpg) center no-repeat !important;
+}
+.slider-item-2 {
+  background: url(../img/turkey-xmas.jpg) center no-repeat !important;
+}
+.slider-item-3 {
+  background: url(../img/hungary-xmas.jpg) center no-repeat !important;
+}
+.slider-item-4 {
+  background: url(../img/france-xmas.jpg) center no-repeat !important;
+}
+.new_f-wrapper-bg-imgs {
+  background: url(../img/snowflake.svg) no-repeat left 25px top 83%, url(../img/snowflake-2.svg) no-repeat right 15px top 2%, url(../img/snowflake.svg) no-repeat left 39% top 4% !important;
+  background-size: 48px !important;
+}*/
 /* Header */
 .language {
   display: inline-block;
@@ -303,14 +271,6 @@ section {
   width: 8rem;
   height: 8rem;
 }
-.header-agency {
-  font-size: 1.7rem;
-  display: block;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 0;
-  color: #00CED1;
-}
 .header-name {
   height: 7rem;
 }
@@ -385,47 +345,12 @@ section {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-.main-title {
-  -webkit-animation: fadeInLeft 1s both;
-  animation: fadeInLeft 1s both;
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-}
-.animate {
-  -webkit-animation: fadeInRight 0.8s both;
-  animation: fadeInRight 0.8s both;
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-}
 .main {
   padding: 0 0 1rem;
   background-size: cover;
 }
 .main-content {
   padding: 3rem 0;
-}
-.main-content h1 {
-  margin-top: 0;
-  line-height: 1.5;
-  font-family: 'Lora', serif;
-  color: #fff;
-  font-size: 4rem;
-  text-transform: uppercase;
-}
-.main-tagline {
-  font-family: 'Lora', serif;
-  display: inline-block;
-  padding: 3rem;
-  background-color: rgba(185, 70, 70, 0.5);
-  font-size: 1.8rem;
-  border: none;
-  border-radius: 0.9rem;
-  color: #fff;
-  margin-top: 1rem;
-  text-align: center;
-}
-.main-tagline strong {
-  font-size: 3rem;
 }
 .main-form {
   background-color: #ffffff;
@@ -653,13 +578,6 @@ section {
 .box-header {
   font-family: 'Lora', serif;
 }
-/*Feedback*/
-.feedback {
-  padding-top: 4rem;
-}
-.feedback-img {
-  width: 30%;
-}
 /* callback */
 .callback {
   padding: 0 0;
@@ -806,9 +724,6 @@ section {
   html {
     font-size: 9.5px;
   }
-  .main-content {
-    padding-bottom: 5rem;
-  }
   .header-name {
     height: 5rem;
   }
@@ -824,16 +739,8 @@ section {
   html {
     font-size: 9px;
   }
-  .main {
-    background-position: top left;
-    /*фон подгоняем под новый размер*/
-  }
   .header-btn {
     height: 100%;
-  }
-  .main-title {
-    text-align: center;
-    padding-bottom: 2rem;
   }
   .slider-item a {
     height: auto;
@@ -859,9 +766,6 @@ section {
     margin-left: auto;
     margin-right: auto;
     padding: 0 2px;
-  }
-  .main-content {
-    padding-top: 2rem;
   }
   .box-content {
     width: 50%;
@@ -930,15 +834,6 @@ section {
     padding: 3rem 1rem;
     width: 70%;
   }
-  .main-form {
-    margin-top: 3rem;
-  }
-  .main {
-    text-align: center;
-  }
-  .phone-link {
-    font-size: 1.3rem;
-  }
   .header-img {
     width: 6rem;
     height: 6rem;
@@ -997,5 +892,26 @@ section {
   .footer-nav ul li {
     padding: 0;
     font-size: 1.2rem;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .slider {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    height: 75vh;
+  }
+  .slider-item {
+    width: 100%;
+  }
+  .slider-item:hover {
+    -webkit-box-flex: 30%;
+        -ms-flex-positive: 30%;
+            flex-grow: 30%;
+  }
+  .slider-item a {
+    height: auto;
+    width: auto;
   }
 }
